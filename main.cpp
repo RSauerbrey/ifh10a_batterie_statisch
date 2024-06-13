@@ -8,11 +8,11 @@ int main()
 {
     Ladegeraet* ladegeraet = new Ladegeraet();
     int ladestand = 10;
-    while( ladestand < 100 )
+    while( ladestand <= 100 )
     {
-        cout << "Ladestand: " << ladestand << endl;
         ladegeraet->setLadestand( ladestand );
         ladegeraet->ausloesen();
+        cout << "Ladestand: " << ladestand << endl;
         ladestand = ladestand + 10;
     }
 
